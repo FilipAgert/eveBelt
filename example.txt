@@ -1,0 +1,30 @@
+Concentrated Veldspar 20 383 2 038 m3 12 km
+Concentrated Veldspar 23 557 2 355 m3 12 km
+Concentrated Veldspar 27 238 2 723 m3 12 km
+Concentrated Veldspar 30 247 3 024 m3 14 km
+Condensed Scordite 10 671 1 600 m3 12 km
+Condensed Scordite 13 183 1 977 m3 13 km
+Condensed Scordite 9 333 1 399 m3 12 km
+Condensed Scordite 9 809 1 471 m3 13 km
+Dense Veldspar 17 734 1 773 m3 13 km
+Dense Veldspar 28 269 2 826 m3 13 km
+Massive Scordite 11 890 1 783 m3 13 km
+Massive Scordite 13 122 1 968 m3 12 km
+Massive Scordite 7 780 1 167 m3 13 km
+Scordite 11 227 1 684 m3 12 km
+Scordite 12 690 1 903 m3 12 km
+Scordite 12 846 1 926 m3 13 km
+Scordite 6 963 1 044 m3 13 km
+Scordite 8 414 1 262 m3 13 km
+Scordite 8 647 1 297 m3 14 km
+Scordite 8 664 1 299 m3 12 km
+Scordite 9 782 1 467 m3 13 km
+Scordite 9 960 1 494 m3 12 km
+Veldspar 20 685 2 068 m3 15 km
+Veldspar 22 023 2 202 m3 12 km
+Veldspar 22 224 2 222 m3 14 km
+Veldspar 22 563 2 256 m3 12 km
+Veldspar 25 464 2 546 m3 12 km
+Veldspar 25 933 2 593 m3 12 km
+Veldspar 33 873 3 387 m3 12 km
+Veldspar 5 251 525 m3 11 km
