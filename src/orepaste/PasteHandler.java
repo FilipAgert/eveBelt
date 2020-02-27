@@ -1,28 +1,40 @@
 package orepaste;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class PasteHandler {
     public ArrayList<Ore> ores;
+    public HashMap<String, Integer> oreMap;
 
     public PasteHandler() {
         ores = new ArrayList<>();
+        oreMap = new HashMap<>();
     }
 
     public void paste(String data) {
         String[] rows = sepRows(data);
 
-        //Removes distance to asteroid from data.
+
         for (int i = 0; i < rows.length; i++) {
+            //Removes distance to asteroid from data.
             rows[i] = rows[i].split("m3")[0];
+
+            //Separates rest of string into two parts, name and (count, volume)
+            String[] arr = rows[i].split("\\d+", 2);
+            String name = arr[0].trim();
+            double ratio = getRatio(name);
+
+            String rest = rows[i].substring(name.length() + 1).trim();
+            int count = sepCountVol(rest, ratio)[0];
+            if(oreMap.containsKey(name)) {
+                oreMap.put(name, oreMap.get(name) + count);
+            }
         }
+        oreMap.forEach((name, count) -> ores.add(new Ore(name, count, getRatio(name))));
+    }
 
-
-
-
+    private double getRatio(String oreName) {
+        return 0.15;
     }
 
     /**
@@ -72,8 +84,4 @@ public class PasteHandler {
     private String[] sepRows(String data) {
         return data.split("\\r?\\n");
     }
-
-
-
-
 }

@@ -3,12 +3,11 @@ package orepaste;
 public class Ore {
     private String name;
     private int count;
-    private Double volume;
+    private double ratio;
 
-    public Ore(String name, int count, Double volume) {
+    public Ore(String name, int count, double ratio) {
         this.name = name;
         this.count = count;
-        this.volume = volume;
     }
 
     public String getName() {
@@ -19,8 +18,8 @@ public class Ore {
         return count;
     }
 
-    public Double getVolume() {
-        return volume;
+    public double getVolume() {
+        return count * ratio;
     }
 
     public Double getSell() {
